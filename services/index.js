@@ -29,9 +29,9 @@ export class CalculatorService {
     }
 
     resetValues(){
-        store.setValue(storeNames.previousValue, 0);
-        store.setValue(storeNames.currentValue, '');
-        store.setValue(storeNames.previousOperator, '+');
+        store.deleteValue(storeNames.previousValue)
+        store.deleteValue(storeNames.currentValue);
+        store.deleteValue(storeNames.previousOperator);
         return;
     }
 }

@@ -9,4 +9,8 @@ export class Store {
     getValue(key){
         return confInstance.get(key);
     }
+
+    deleteValue(key){
+        return confInstance.delete(key)
+    }
 }
